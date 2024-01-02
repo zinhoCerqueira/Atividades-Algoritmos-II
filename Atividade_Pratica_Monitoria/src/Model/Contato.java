@@ -4,7 +4,6 @@ import Controller.Controller;
 
 public class Contato {
     private static Controller controller = new Controller();
-    private static int ultimoId = controller.valorID();
     private int id;
     private String nome;
     private String telefone;
@@ -12,7 +11,6 @@ public class Contato {
     private String email;
 
     public Contato(String nome, String telefone, String endereco, String email) {
-        this.id = ++ultimoId;
         this.nome = nome;
         this.telefone = telefone;
         this.endereco = endereco;

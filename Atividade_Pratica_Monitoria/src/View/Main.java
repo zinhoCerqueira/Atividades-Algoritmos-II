@@ -73,6 +73,7 @@ public class Main {
 //
 //        controller.salvar();
         controller.recuperarContatos("contatos.txt");
+        controller.valorID();
 
     }
 

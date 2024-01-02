@@ -11,12 +11,15 @@ import java.io.FileReader;
 
 public class Controller {
     private Map<Integer, Contato> contatos;
+    private int id;
 
     public Controller(){
         this.contatos = new HashMap<>();
     }
 
     public void adicionarContato(Contato contato){
+        contato.setId(this.id);
+        this.id++;
         contatos.put(contato.getId(), contato);
     }
 
@@ -96,14 +99,13 @@ public class Controller {
 
     }
 
-    public int valorID(){
+    public  void valorID(){
         int maiorChave = Integer.MIN_VALUE;
         for (Contato contato : contatos.values()) {
             if (contato.getId() > maiorChave) {
-                maiorChave = contato.getId();
+                this.id = contato.getId();
             }
         }
-
-        return maiorChave;
+        this.id++;
     }
 }
