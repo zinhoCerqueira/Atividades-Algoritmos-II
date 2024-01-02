@@ -1,7 +1,5 @@
-1,Pereira,1,1,1
--2147483647,jhonson,123321,123321,123321
-2,Fulano,075 9 123456789,Avenida DisneyWorld,fulano@email.com
-3,Beltrano,075 9 234567891,Rua do Parque Central,beltrano@email.com
-4,lklk,1,1,1
-5,ewqeqweqqweq,qeq,qeq,eqw
-7,add,add,add,add
+0,Fulano,075 9 123456789,Avenida DisneyWorld,fulano@email.com
+1,Beltrano,075 9 234567891,Rua do Parque Central,beltrano@email.com
+2,Ciclano,075 9 345678912,Travessa do Circulo Quadrado,ciclano@email.com
+3,Jader,075 9 000000000,Avenida Central,meu@email.com
+4,Maria,075 9 321456789,Rua da Arvore Verde,maria@email.com
