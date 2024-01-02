@@ -1,7 +1,10 @@
 package Model;
 
+import Controller.Controller;
+
 public class Contato {
-    private static int ultimoId = 0;
+    private static Controller controller = new Controller();
+    private static int ultimoId = controller.valorID();
     private int id;
     private String nome;
     private String telefone;
@@ -16,8 +19,20 @@ public class Contato {
         this.email = email;
     }
 
+    public Contato(int id, String nome, String telefone, String endereco, String email) {
+        this.id = id;
+        this.nome = nome;
+        this.telefone = telefone;
+        this.endereco = endereco;
+        this.email = email;
+    }
+
     public int getId() {
         return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNome() {
